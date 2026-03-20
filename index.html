@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Trust Engine</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Live Monitoring</li>
+            <li>Fraud Alerts</li>
+            <li>Users</li>
+            <li>Network</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top Bar -->
+        <div class="topbar">
+            <input type="text" placeholder="Search user...">
+            <span>🔔</span>
+        </div>
+
+        <!-- Metrics -->
+        <div class="metrics">
+            <div class="card">Total Deliveries: 1200</div>
+            <div class="card">Fraud Detected: 34</div>
+            <div class="card">High Risk: 12</div>
+            <div class="card">Avg Score: 76</div>
+        </div>
+
+        <!-- Table -->
+        <div class="card">
+            <h3>Live Trust Score</h3>
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Location</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>U123</td>
+                    <td>Chennai</td>
+                    <td>92</td>
+                    <td class="safe">Safe</td>
+                </tr>
+                <tr>
+                    <td>U456</td>
+                    <td>Coimbatore</td>
+                    <td>45</td>
+                    <td class="monitor">Monitor</td>
+                </tr>
+                <tr>
+                    <td>U789</td>
+                    <td>Madurai</td>
+                    <td>12</td>
+                    <td class="fraud">Fraud</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Trust Score -->
+        <div class="card">
+            <h3>Trust Score Breakdown</h3>
+
+            <p>Device Integrity</p>
+            <progress value="80" max="100"></progress>
+
+            <p>Location Authenticity</p>
+            <progress value="50" max="100"></progress>
+
+            <p>Behavioral Pattern</p>
+            <progress value="30" max="100"></progress>
+
+            <p>Network Risk</p>
+            <progress value="40" max="100"></progress>
+        </div>
+
+        <!-- Alerts -->
+        <div class="alerts">
+            <div class="card">
+                <p><b>User:</b> U789</p>
+                <p>GPS Spoofing</p>
+                <button class="danger">Block</button>
+            </div>
+
+            <div class="card">
+                <p><b>User:</b> U456</p>
+                <p>Suspicious Pattern</p>
+                <button class="warning">Investigate</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
