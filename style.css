@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background: #f1f5f9;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topbar input {
+    padding: 8px;
+    width: 200px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Metrics */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Status Colors */
+.safe {
+    color: green;
+    font-weight: bold;
+}
+
+.monitor {
+    color: orange;
+    font-weight: bold;
+}
+
+.fraud {
+    color: red;
+    font-weight: bold;
+}
+
+/* Alerts */
+.alerts {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.danger {
+    background: red;
+    color: white;
+}
+
+.warning {
+    background: orange;
+    color: white;
+}
+
+/* Progress bars */
+progress {
+    width: 100%;
+    height: 15px;
+    margin-bottom: 10px;
+}
